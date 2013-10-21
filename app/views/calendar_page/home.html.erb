@@ -1,0 +1,9 @@
+<div class = "center hero-unit">
+	<h1>CalendarPage#home</h1>
+	<h2>
+		<li><%= link_to "Create an Event", event_path %></li>
+	<%= calendar @events, {:prev_text=>"<", :next_text=>">"} do |event| %>
+	<div><%= link_to event.title, event %></div>
+	<% end %>
+</h2>
+

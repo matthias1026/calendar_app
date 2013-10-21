@@ -1,4 +1,6 @@
 CalendarApp::Application.routes.draw do
+  root 'calendar_page#home'
+  match '/event', to: 'calendar_page#event', via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
